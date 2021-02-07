@@ -11,17 +11,21 @@ $tertiary: #99E2D0;
 
 body {
     max-width: 1280px;
+    min-width: 375px;
 }
 
 .title {
     font-family: "Shrikhand" Arial, serif, sans-serif;
 }
 
-p
-{
+p {
     font-family: "Roboto";
 }
 
-@media all and (max-width: 700px) {
-
+.footer__title {
+    font-weight: bold;
+}
+footer {
+    background-color: #353535;
+    color: white;
 }
