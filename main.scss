@@ -24,8 +24,15 @@ p {
 
 .footer__title {
     font-weight: bold;
+    margin-left: 2em
 }
+
+
 footer {
     background-color: #353535;
     color: white;
+}
+
+.footer__list {
+    list-style-type: none;
 }

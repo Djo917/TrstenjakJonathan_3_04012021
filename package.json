@@ -1,0 +1,19 @@
+{
+  "name": "p3_trstenjakjonathan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch /mnt/d/formation_développeur_web/P3_TRSTENJAKJonathan/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djo917/TrstenjakJonathan_3_04012021.git"
+  },
+  "author": "Djo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Djo917/TrstenjakJonathan_3_04012021/issues"
+  },
+  "homepage": "https://github.com/Djo917/TrstenjakJonathan_3_04012021#readme"
+}
