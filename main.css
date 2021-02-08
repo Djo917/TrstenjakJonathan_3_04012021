@@ -18,10 +18,58 @@ p {
   font-family: "Roboto";
 }
 
-.footer__title {
-  font-weight: bold;
-  font-family: "Shrikhand";
-  color: white;
+.menu {
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu--title {
+  position: relative;
+  right: 4.2em;
+}
+
+.menu .menu__cards {
+  height: 14em;
+  width: 90%;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.menu .menu__cards--link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+.menu .menu__cards--size {
+  height: 70%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1em 1em 0em 0em;
+}
+
+.menu .menu__cards--title {
+  font-style: "Roboto";
+  font-size: 1.1em;
+  margin-top: 0.2em;
+  margin-bottom: -0.5em;
+  margin-left: 0.5em;
+}
+
+.menu .menu__cards--describe {
+  font-style: "Roboto";
+  margin-left: 0.5em;
 }
 
 footer {
