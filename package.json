@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch /mnt/d/formation_développeur_web/P3_TRSTENJAKJonathan/main.scss:.public/css/style.css"
+    "sass": "sass --watch ./main.scss: /style.css"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Djo917/TrstenjakJonathan_3_04012021.git"

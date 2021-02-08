@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Black.ttf") format("ttf");
+  font-family: "Shrikhand";
+  src: url("/fonts/'Shrikhand-Regular.ttf") format("ttf");
+}
+
+body {
+  max-width: 1280px;
+  min-width: 375px;
+}
+
+.title {
+  font-family: "Shrikhand" Arial, serif, sans-serif;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.footer__title {
+  font-weight: bold;
+  font-family: "Shrikhand";
+  color: white;
+}
+
+footer {
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer__title {
+  font-weight: bold;
+  font-family: "Shrikhand";
+  font-style: italic;
+  margin-left: 0.7em;
+  color: white;
+}
+
+footer .footer__links {
+  color: white;
+  font-family: "Srikhand";
+  font-size: 1em;
+  text-decoration: none;
+  margin-left: 1em;
+  margin-bottom: 0.4em;
+}
+
+footer .fa-hands-helping {
+  font-size: 0.8em;
+}
+
+footer .footer--marge {
+  margin-right: 1em;
+}
+/*# sourceMappingURL=main.css.map */

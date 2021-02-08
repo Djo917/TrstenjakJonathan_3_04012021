@@ -24,15 +24,37 @@ p {
 
 .footer__title {
     font-weight: bold;
-    margin-left: 2em
+    font-family: "Shrikhand";
+    color: white;
 }
 
 
 footer {
     background-color: #353535;
-    color: white;
-}
+    display: flex;
+    flex-direction: column;
 
-.footer__list {
-    list-style-type: none;
+    .footer__title {
+        font-weight: bold;
+        font-family: "Shrikhand";
+        font-style: italic;
+        margin-left: 0.7em;
+        color: white;
+    }
+
+    .footer__links {
+        color: white;
+        font-family: "Srikhand";
+        font-size: 1em;
+        text-decoration: none;
+        margin-left: 1em;
+        margin-bottom: 0.4em;
+      }
+    
+    .fa-hands-helping {
+        font-size: 0.8em;
+    }
+    .footer--marge {
+        margin-right: 1em;
+    }
 }
