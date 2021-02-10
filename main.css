@@ -10,8 +10,46 @@ body {
   min-width: 375px;
 }
 
-.title {
-  font-family: "Shrikhand" Arial, serif, sans-serif;
+.logo {
+  width: 5em;
+  position: relative;
+  left: 3em;
+}
+
+.introduction {
+  height: 16em;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+.introduction__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: gray;
+}
+
+.introduction__location p {
+  margin-left: 1em;
+}
+
+.introduction--title {
+  font-family: "Roboto";
+  margin-left: 2.5em;
+  width: 70%;
+}
+
+.introduction--describe {
+  font-family: "Shrikhand";
+  font-size: 1.2em;
+  width: 80%;
+  margin-left: 2.2em;
 }
 
 p {
