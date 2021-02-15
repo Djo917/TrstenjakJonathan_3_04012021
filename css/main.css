@@ -13,7 +13,9 @@ body {
 }
 
 .logo {
-  width: 11em;
+  width: 5em;
+  position: fixed;
+  left: 3em;
 }
 
 .introduction {
@@ -78,7 +80,7 @@ p {
 .menu .menu__cards {
   height: 14em;
   width: 90%;
-  background-color: #FFFF;
+  background-color: white;
   border-radius: 1em;
   margin-bottom: 1em;
 }
@@ -138,18 +140,10 @@ p {
   margin-left: 1em;
 }
 
-.step--lozenge {
+.number {
   position: absolute;
   left: -5px;
   top: 1em;
-  text-align: center;
-  height: 20px;
-  line-height: 20px;
-  width: 15px;
-  color: #FFFF;
-  background-color: #9356DC;
-  border: solid 1px #9356DC;
-  border-radius: 50%;
 }
 
 footer {

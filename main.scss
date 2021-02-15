@@ -8,23 +8,26 @@
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
+$white: #FFFF;
+$background: #F2F2F2;
+$footercolor: #353535;
 
 body {
     max-width: 1280px;
     min-width: 375px;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-    width: 5em;
-    position: relative;
-    left: 3em;
+    width: 11em;
 }
 
 .introduction
 {
     height: 16em;
     text-align: center;
-    background-color: #F2F2F2;
+    background-color: $background;
 
     &__location {
         display: flex;
@@ -56,7 +59,7 @@ p {
 }
 
 .menu {
-    background-color: #F2F2F2;
+    background-color: $background;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +72,7 @@ p {
     .menu__cards {
         height: 14em;
         width: 90%;
-        background-color: white;
+        background-color:$white;
         border-radius: 1em;
         margin-bottom: 1em;
     }
@@ -116,16 +119,31 @@ p {
     border: 1em;
     border-radius: 1em;
     background-color: grey;
+    position: relative;
 
         &--title {
             margin-left: 1em;
         }
     }
 
+    &--lozenge {
+        position: absolute;
+        left: -5px;
+        top: 1em;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        width: 15px;
+        color: $white;
+        background-color: $primary;
+        border: solid 1px $primary;
+        border-radius: 50%;
+    }
 }
 
+
 footer {
-    background-color: #353535;
+    background-color: $footercolor;
     display: flex;
     flex-direction: column;
 
