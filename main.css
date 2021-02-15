@@ -17,47 +17,8 @@ body {
 }
 
 .introduction {
-  height: 16em;
   text-align: center;
-  background-color: #F2F2F2;
-}
-
-.introduction__location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: gray;
-}
-
-.introduction__location p {
-  margin-left: 1em;
-}
-
-.introduction--title {
-  font-family: "Roboto";
-  margin-left: 2.5em;
-  width: 70%;
-}
-
-.introduction--describe {
-  font-family: "Shrikhand";
-  font-size: 1.2em;
-  width: 80%;
-  margin-left: 2.2em;
-}
-
-p {
-  font-family: "Roboto";
-}
-
-.menu {
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,12 +31,72 @@ p {
           align-items: center;
 }
 
-.menu .menu--title {
+.introduction__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+
+.introduction__location p {
+  margin-left: 1em;
+}
+
+.introduction--title {
+  font-family: "Roboto";
+  width: 70%;
+}
+
+.introduction--describe {
+  font-family: "Shrikhand";
+  font-size: 1.2em;
+  width: 80%;
+}
+
+.introduction__buton {
+  width: 15em;
+  border-radius: 2em;
+  margin-bottom: 1em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #FFFF;
+}
+
+.introduction__buton p {
+  font-family: "Roboto";
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.menu {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu--title {
   position: relative;
   right: 4.2em;
 }
 
-.menu .menu__cards {
+.menu__cards {
   height: 14em;
   width: 90%;
   background-color: #FFFF;
@@ -83,13 +104,13 @@ p {
   margin-bottom: 1em;
 }
 
-.menu .menu__cards--link {
+.menu__cards--link {
   text-decoration: none;
   text-transform: capitalize;
   color: black;
 }
 
-.menu .menu__cards--size {
+.menu__cards--size {
   height: 70%;
   width: 100%;
   -o-object-fit: cover;
@@ -97,7 +118,7 @@ p {
   border-radius: 1em 1em 0em 0em;
 }
 
-.menu .menu__cards--title {
+.menu__cards--title {
   font-style: "Roboto";
   font-size: 1.1em;
   margin-top: 0.2em;
@@ -105,7 +126,7 @@ p {
   margin-left: 0.5em;
 }
 
-.menu .menu__cards--describe {
+.menu__cards--describe {
   font-style: "Roboto";
   margin-left: 0.5em;
 }
@@ -130,7 +151,7 @@ p {
           box-shadow: 2em;
   border: 1em;
   border-radius: 1em;
-  background-color: grey;
+  background-color: #F6F6F6;
   position: relative;
 }
 
@@ -141,7 +162,7 @@ p {
 .step--lozenge {
   position: absolute;
   left: -5px;
-  top: 1em;
+  top: 21px;
   text-align: center;
   height: 20px;
   line-height: 20px;
