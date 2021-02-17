@@ -12,6 +12,7 @@ $white: #FFFF;
 $background: #F6F6F6;
 $footercolor: #353535;
 $headcolor: #EAEAEA;
+$textcolor: black;
 
 body {
     max-width: 1280px;
@@ -93,7 +94,7 @@ p {
         &--link {
             text-decoration: none;
             text-transform: capitalize;
-
+        }
         &--size {
             height: 70%;
             width: 100%;
@@ -106,8 +107,7 @@ p {
             font-size: 1.1em;
             margin-top: 0.2em;
             margin-bottom: -0.5em;
-            margin-left: 0.5em;
-            
+            margin-left: 0.5em;   
         }
 
         &--describe {
@@ -183,3 +183,52 @@ footer {
         margin-right: 1em;
     }
 }
+
+/* Palette du gout */ 
+
+.bigcards__picture {
+    height: 13em;
+    width: 100%;
+    object-fit: cover;
+}
+
+.composition {
+    background-color: $background;
+    padding-top: 2em;
+    border-radius: 3em;
+    position: relative;
+    top: -2.9em;
+
+    &--title {
+        font-family: "Shrikhand";
+        font-style: italic;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.palette__cards {
+    background-color: $white;
+    border-radius: 1em;
+
+    .palette--link {
+        text-decoration: none;
+        color: $textcolor;
+    }
+
+    .dish__name {
+        font-family: "Shrikhand";
+        font-size: 1.2em;
+        margin-top: 1em;
+        margin-bottom: -0.5em;
+        margin-left: 0.5em;
+    }
+
+    .descriptive {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0.5em;
+        margin-bottom: -0.5em;
+    }
+}
+

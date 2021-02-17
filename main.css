@@ -107,7 +107,6 @@ p {
 .menu__cards--link {
   text-decoration: none;
   text-transform: capitalize;
-  color: black;
 }
 
 .menu__cards--size {
@@ -189,11 +188,11 @@ footer .footer__title {
   font-family: "Shrikhand";
   font-style: italic;
   margin-left: 0.7em;
-  color: white;
+  color: #FFFF;
 }
 
 footer .footer__links {
-  color: white;
+  color: #FFFF;
   font-family: "Srikhand";
   font-size: 1em;
   text-decoration: none;
@@ -207,5 +206,57 @@ footer .fa-hands-helping {
 
 footer .footer--marge {
   margin-right: 1em;
+}
+
+/* Palette du gout */
+.bigcards__picture {
+  height: 13em;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.composition {
+  background-color: #F6F6F6;
+  padding-top: 2em;
+  border-radius: 3em;
+  position: relative;
+  top: -2.9em;
+}
+
+.composition--title {
+  font-family: "Shrikhand";
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+
+.palette__cards {
+  background-color: #FFFF;
+  border-radius: 1em;
+}
+
+.palette__cards .palette--link {
+  text-decoration: none;
+  color: black;
+}
+
+.palette__cards .dish__name {
+  font-family: "Shrikhand";
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: -0.5em;
+  margin-left: 0.5em;
+}
+
+.palette__cards .descriptive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 0.5em;
+  margin-bottom: -0.5em;
 }
 /*# sourceMappingURL=main.css.map */
