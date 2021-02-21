@@ -12,8 +12,13 @@ body {
   padding: 0;
 }
 
-.logo {
+header {
+  text-align: center;
+}
+
+header .logo {
   width: 11em;
+  text-align: center;
 }
 
 .introduction {
@@ -107,6 +112,7 @@ p {
 .menu__cards--link {
   text-decoration: none;
   text-transform: capitalize;
+  color: black;
 }
 
 .menu__cards--size {
@@ -228,20 +234,24 @@ footer .footer--marge {
   font-family: "Shrikhand";
   font-style: italic;
   text-align: center;
-  font-weight: bold;
 }
 
-.palette__cards {
+.palette__entry {
+  margin-left: 1em;
+}
+
+.palette__entry .palette__cards {
+  width: 95%;
   background-color: #FFFF;
-  border-radius: 1em;
+  border-radius: 0.8em;
 }
 
-.palette__cards .palette--link {
+.palette__entry .palette__cards .palette--link {
   text-decoration: none;
   color: black;
 }
 
-.palette__cards .dish__name {
+.palette__entry .palette__cards .dish__name {
   font-family: "Shrikhand";
   font-size: 1.2em;
   margin-top: 1em;
@@ -249,7 +259,7 @@ footer .footer--marge {
   margin-left: 0.5em;
 }
 
-.palette__cards .descriptive {
+.palette__entry .palette__cards .descriptive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,5 +268,9 @@ footer .footer--marge {
           justify-content: space-between;
   margin-left: 0.5em;
   margin-bottom: -0.5em;
+}
+
+.underline {
+  border-bottom: 10px solid red;
 }
 /*# sourceMappingURL=main.css.map */

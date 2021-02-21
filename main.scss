@@ -21,10 +21,16 @@ body {
     padding: 0;
 }
 
-.logo {
-    width: 11em;
-}
+header {
+    
+    text-align: center;
 
+    .logo {
+        width: 11em;
+        text-align: center;
+    }
+    
+}
 .introduction {
     text-align: center;
     background-color: $background;
@@ -94,6 +100,7 @@ p {
         &--link {
             text-decoration: none;
             text-transform: capitalize;
+            color: $textcolor;
         }
         &--size {
             height: 70%;
@@ -203,32 +210,37 @@ footer {
         font-family: "Shrikhand";
         font-style: italic;
         text-align: center;
-        font-weight: bold;
     }
 }
 
-.palette__cards {
-    background-color: $white;
-    border-radius: 1em;
+.palette__entry {
+    margin-left: 1em;
 
-    .palette--link {
-        text-decoration: none;
-        color: $textcolor;
-    }
-
-    .dish__name {
-        font-family: "Shrikhand";
-        font-size: 1.2em;
-        margin-top: 1em;
-        margin-bottom: -0.5em;
-        margin-left: 0.5em;
-    }
-
-    .descriptive {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 0.5em;
-        margin-bottom: -0.5em;
+    .palette__cards {
+        width: 95%;
+        background-color: $white;
+        border-radius: 0.8em;
+    
+        .palette--link {
+            text-decoration: none;
+            color: $textcolor;
+        }
+    
+        .dish__name {
+            font-family: "Shrikhand";
+            font-size: 1.2em;
+            margin-top: 1em;
+            margin-bottom: -0.5em;
+            margin-left: 0.5em;
+        }
+    
+        .descriptive {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 0.5em;
+            margin-bottom: -0.5em;
+        }
     }
 }
+
 
