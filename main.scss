@@ -28,9 +28,10 @@ header {
     .logo {
         width: 11em;
         text-align: center;
-    }
+    }   
     
 }
+
 .introduction {
     text-align: center;
     background-color: $background;
@@ -70,8 +71,7 @@ header {
 
         & p {
             font-family: "Roboto";
-        }
-        
+        }   
     }
 }
 

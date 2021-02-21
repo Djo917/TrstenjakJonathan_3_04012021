@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./main.scss: /css/main.css"
+    "sass": "sass --watch /mnt/d/Formation_développeur_web/P3_TRSTENJAKJonathan/main.scss:css/main.css"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Djo917/TrstenjakJonathan_3_04012021.git"
   },
-  "author": "Djo",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Djo917/TrstenjakJonathan_3_04012021/issues"
