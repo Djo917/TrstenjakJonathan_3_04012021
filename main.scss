@@ -75,7 +75,15 @@ p {
 }
 
 .step {
-    margin-left: 0.5em;
+    margin-left: 1.5em;
+    margin-bottom: 3em;
+    width: 90%;
+    
+    &--title {
+        margin-left: -0.5em;
+        font-family: "Roboto";
+        font-weight: 900;
+    }
 
     &__number {
     display: flex;
@@ -116,17 +124,16 @@ p {
     }
 }
 
-.title {
-    margin-left: 0.5em;
-}
-
 .menu {
     background-color: $background;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2.5em;
 
     &--title {
+        font-family: "Roboto";
+        font-weight: 700;
         position: relative;
         right: 4.2em;
     }
@@ -141,7 +148,6 @@ p {
 
         &--link {
             text-decoration: none;
-            text-transform: capitalize;
             color: $textcolor;
         }
         &--size {
@@ -190,18 +196,17 @@ footer {
     background-color: $footercolor;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2.5em;
 
     .footer__title {
-        font-weight: bold;
         font-family: "Shrikhand";
-        font-style: italic;
         margin-left: 0.7em;
         color:$white;
     }
 
     .footer__links {
         color: $white;
-        font-family: "Srikhand";
+        font-family: "Roboto";
         font-size: 1em;
         text-decoration: none;
         margin-left: 1em;
