@@ -5,13 +5,41 @@ body {
   padding: 0;
 }
 
+/* page principale */
 header {
   text-align: center;
+  -webkit-box-shadow: 5px 7px 7px #F6F6F6;
+          box-shadow: 5px 7px 7px #F6F6F6;
+  height: 2.8em;
 }
 
-header .logo {
-  width: 11em;
+header .logo--main {
   text-align: center;
+  font-family: "Shrikhand";
+}
+
+.start {
+  text-align: center;
+  -webkit-box-shadow: 5px 7px 7px #F6F6F6;
+          box-shadow: 5px 7px 7px #F6F6F6;
+  height: 2.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.start .logo {
+  text-align: center;
+  font-family: "Shrikhand";
+  position: relative;
+  left: 2.3em;
+}
+
+.start .start--link {
+  margin-left: 1em;
 }
 
 p {
@@ -32,6 +60,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .introduction__location {
