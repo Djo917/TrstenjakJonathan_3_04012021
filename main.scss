@@ -280,11 +280,6 @@ footer {
         justify-content: space-around;
         align-items: center;
     }
-
-    &--fat {
-        font-family: 'Roboto';
-        font-weight: 100;
-    }
 }
 
 .palette__entry {
@@ -339,6 +334,14 @@ footer {
             }
         }
     }
+}
+
+/* La note enchantee */ 
+
+.bigcards__picture--enchantee {
+    height: 15em;
+    width: 100%;
+    object-fit: cover;
 }
 
 .order__buton {
