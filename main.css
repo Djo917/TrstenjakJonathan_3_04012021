@@ -313,11 +313,6 @@ footer .footer--marge {
           align-items: center;
 }
 
-.composition--fat {
-  font-family: 'Roboto';
-  font-weight: 100;
-}
-
 .palette__entry {
   margin: 0.5em;
 }
@@ -372,6 +367,22 @@ footer .footer--marge {
 .palette__entry .palette__cards .descriptive--price {
   margin-right: 1.1em;
   font-weight: 700;
+}
+
+/* La note enchantee */
+.bigcards__picture--enchantee {
+  height: 15em;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* A la francaise" */
+.bigcards__picture--francaise {
+  height: 15em;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .order__buton {
