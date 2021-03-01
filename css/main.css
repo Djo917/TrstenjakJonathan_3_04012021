@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   max-width: 1280px;
   min-width: 375px;
@@ -5,14 +6,37 @@ body {
   padding: 0;
 }
 
+/* en-tête index.html */
 header {
   text-align: center;
+  box-shadow: 5px 7px 7px #F6F6F6;
+  height: 2.8em;
 }
-header .logo {
-  width: 11em;
+header .logo--main {
   text-align: center;
+  font-family: "Shrikhand";
 }
 
+/*fin */
+/* en-tête pages de menu */
+.start {
+  text-align: center;
+  box-shadow: 5px 7px 7px #F6F6F6;
+  height: 2.8em;
+  display: flex;
+  align-items: center;
+}
+.start .logo {
+  text-align: center;
+  font-family: "Shrikhand";
+  position: relative;
+  left: 2.3em;
+}
+.start .start--link {
+  margin-left: 1em;
+}
+
+/* en-tête pages de menu */
 p {
   font-family: "Roboto";
 }
@@ -24,6 +48,7 @@ p {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1em;
+  padding-bottom: 2em;
 }
 .introduction__location {
   display: flex;
@@ -40,9 +65,8 @@ p {
   width: 70%;
 }
 .introduction--describe {
-  font-family: "Shrikhand";
+  font-family: "Roboto";
   font-size: 1.2em;
-  width: 80%;
 }
 .introduction__buton {
   width: 15em;
@@ -55,8 +79,49 @@ p {
   font-family: "Roboto";
 }
 
-.title {
-  margin-left: 0.5em;
+.step {
+  margin-left: 1.5em;
+  margin-bottom: 3em;
+  width: 90%;
+}
+.step--title {
+  margin-left: -0.5em;
+  font-family: "Roboto";
+  font-weight: 900;
+}
+.step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  box-shadow: 2px 7px 7px #EAEAEA;
+  border: 1em;
+  border-radius: 0.7em;
+  background-color: #F6F6F6;
+  position: relative;
+}
+.step__number--title {
+  margin-left: 1em;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.step__number--color {
+  color: #7E7E7E;
+}
+.step--lozenge {
+  position: absolute;
+  left: -5px;
+  top: 21px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  width: 15px;
+  color: #FFFF;
+  background-color: #9356DC;
+  border: solid 1px #9356DC;
+  border-radius: 50%;
 }
 
 .menu {
@@ -64,8 +129,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2.5em;
 }
 .menu--title {
+  font-family: "Roboto";
+  font-weight: 700;
   position: relative;
   right: 4.2em;
 }
@@ -79,7 +147,6 @@ p {
 }
 .menu__cards--link {
   text-decoration: none;
-  text-transform: capitalize;
   color: black;
 }
 .menu__cards--size {
@@ -116,53 +183,20 @@ p {
   padding: 5px;
 }
 
-.step {
-  margin-left: 0.5em;
-}
-.step__number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 1em;
-  box-shadow: 2em;
-  border: 1em;
-  border-radius: 1em;
-  background-color: #F6F6F6;
-  position: relative;
-}
-.step__number--title {
-  margin-left: 1em;
-}
-.step--lozenge {
-  position: absolute;
-  left: -5px;
-  top: 21px;
-  text-align: center;
-  height: 20px;
-  line-height: 20px;
-  width: 15px;
-  color: #FFFF;
-  background-color: #9356DC;
-  border: solid 1px #9356DC;
-  border-radius: 50%;
-}
-
 footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2.5em;
 }
 footer .footer__title {
-  font-weight: bold;
   font-family: "Shrikhand";
-  font-style: italic;
   margin-left: 0.7em;
   color: #FFFF;
 }
 footer .footer__links {
   color: #FFFF;
-  font-family: "Srikhand";
+  font-family: "Roboto";
   font-size: 1em;
   text-decoration: none;
   margin-left: 1em;
@@ -177,26 +211,37 @@ footer .footer--marge {
 
 /* Palette du gout */
 .bigcards__picture {
-  height: 13em;
   width: 100%;
   object-fit: cover;
 }
 
 .composition {
+  height: 62em;
   background-color: #F6F6F6;
-  padding-top: 2em;
-  border-radius: 3em;
+  padding-top: 1em;
+  border-radius: 3em 3em 0 0;
   position: relative;
   top: -2.9em;
 }
 .composition--title {
   font-family: "Shrikhand";
-  font-style: italic;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .palette__entry {
   margin-left: 1em;
+}
+.palette__entry .palette--title {
+  font-family: "Roboto";
+  font-size: 1em;
+  text-transform: uppercase;
+  color: grey;
+}
+.palette__entry .palette--title .underline {
+  border-bottom: solid 2px #99E2D0;
 }
 .palette__entry .palette__cards {
   width: 95%;
@@ -208,7 +253,7 @@ footer .footer--marge {
   color: black;
 }
 .palette__entry .palette__cards .dish__name {
-  font-family: "Shrikhand";
+  font-family: "Roboto";
   font-size: 1.2em;
   margin-top: 1em;
   margin-bottom: -0.5em;
@@ -219,6 +264,24 @@ footer .footer--marge {
   justify-content: space-between;
   margin-left: 0.5em;
   margin-bottom: -0.5em;
+}
+.palette__entry .palette__cards .descriptive--price {
+  margin-right: 1.1em;
+  font-weight: bolder;
+}
+
+.order__buton {
+  width: 12em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+  margin-top: 2.5em;
+  margin-left: 4em;
+  margin-bottom: 1em;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #FFFF;
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=main.css.map */
