@@ -231,10 +231,27 @@ p {
   margin-left: 0.5em;
 }
 
-.menu--heart {
+.menu .menu--heart {
   position: relative;
   left: 14em;
   bottom: 2.2em;
+  z-index: 1;
+}
+
+.menu .menu--heart:hover::after {
+  opacity: 1;
+}
+
+.menu .menu--heart::after {
+  content: "";
+  position: relative;
+  left: 14em;
+  bottom: 2.2em;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  background-color: #9356DC;
 }
 
 .menu--new {
