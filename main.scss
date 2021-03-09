@@ -206,31 +206,35 @@ p {
             margin-left: 0.5em;
         }
     }
-
-    .menu--heart {
+    
+    
+    &__container
+    {
+        display: flex;
         position: relative;
-        left: 14em;
-        bottom: 2.2em;
-        z-index: 1;
-        
-        &:hover {
-            &::after {
-                opacity: 1;
-            }
-        }
+        left: 18.5em;
+        bottom: 3em;
+    }
+    .menu--heart {
+        position: absolute;
+        z-index: 1;        
+    }
 
-        &::after {
-            content: "";
-            position: relative;
-            left: 14em;
-            bottom: 2.2em;
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 250ms;
-            background-color: $primary;
-        }
-        
-        
+    
+    .menu--heartfill {
+
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        color: $white;
+        transition: all 2s;
+
+        &:hover {
+            opacity: 1;
+            color: $primary;
+            color: linear-gradient($secondary, $primary)
+        } 
+          
     }
 
     &--new {
