@@ -96,15 +96,17 @@ p {
 
 .introduction__buton {
   width: 15em;
+  height: 3em;
+  border: none;
   border-radius: 2em;
   margin-bottom: 1em;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: #FFFF;
-}
-
-.introduction__buton p {
+  text-decoration: none;
   font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .step {
@@ -409,7 +411,8 @@ footer .footer--marge {
 }
 
 .order__buton {
-  width: 12em;
+  width: 11.5em;
+  height: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,6 +422,7 @@ footer .footer--marge {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: none;
   border-radius: 2em;
   margin-top: 2.5em;
   margin-left: 4em;
@@ -426,6 +430,9 @@ footer .footer--marge {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: #FFFF;
-  font-size: 1.1em;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
