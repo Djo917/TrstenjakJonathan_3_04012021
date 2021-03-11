@@ -426,5 +426,15 @@ footer .footer--marge {
   text-decoration: none;
   font-family: "Roboto";
   font-weight: 400;
+  -webkit-box-shadow: 2px 4px 5px #353535;
+          box-shadow: 2px 4px 5px #353535;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.order__buton:hover {
+  background-color: #fface8;
+  -webkit-box-shadow: 2px 4px 15px #353535;
+          box-shadow: 2px 4px 15px #353535;
 }
 /*# sourceMappingURL=main.css.map */
