@@ -249,21 +249,20 @@ p {
   position: relative;
   left: 15em;
   bottom: 3.3em;
-  width: 0.75em;
-  height: 0.75em;
+  width: 12px;
+  height: 12px;
   background-color: black;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  z-index: 0;
 }
 
 .menu__heart--black::before {
   content: "";
   position: absolute;
   bottom: 0px;
-  left: -6px;
-  width: 0.75em;
-  height: 0.75em;
+  left: -5.6px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: black;
 }
@@ -271,45 +270,64 @@ p {
 .menu__heart--black::after {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -5.6px;
   right: 0px;
-  width: 0.75em;
-  height: 0.75em;
+  width: 12px;
+  height: 12px;
   background-color: black;
   border-radius: 50%;
 }
 
 .menu__heart--white {
   position: relative;
-  left: 241.75px;
-  bottom: 63.65px;
-  width: 0.54em;
-  height: 0.54em;
+  left: 241px;
+  bottom: 63px;
+  width: 10px;
+  height: 10px;
   background-color: white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  /*transition: background-color 400ms;*/
+}
+
+.menu__heart--white:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.menu__heart--white:hover::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.menu__heart--white:hover::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .menu__heart--white::before {
   content: "";
   position: absolute;
   bottom: 0px;
-  left: -5.6px;
-  width: 0.54em;
-  height: 0.54em;
+  left: -5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: white;
+  z-index: 1;
+  /*transition: background-color 400ms;*/
 }
 
 .menu__heart--white::after {
   content: "";
   position: absolute;
-  top: -5.6px;
+  top: -5px;
   right: 0px;
-  width: 0.54em;
-  height: 0.54em;
+  width: 10px;
+  height: 10px;
   background-color: white;
   border-radius: 50%;
+  /*transition: background-color 400ms;*/
 }
 
 footer {
