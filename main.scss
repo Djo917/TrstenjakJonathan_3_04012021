@@ -1,5 +1,5 @@
-$primary: #9356DC;
-$secondary: #FF79DA;
+$primary: rgba(147, 86, 220, 1);
+$secondary: rgba(255, 121, 218, 1);
 $tertiary: #99E2D0;
 $text-tertiary: #008766;
 $white: #FFFF;
@@ -261,24 +261,28 @@ p {
         bottom: 63px;
         width: 10px;
         height: 10px;
+        /*background-color: $white;*/
+        transform : rotate(45deg) scale(1);
+        transition: transform;
+        transition-duration: 500ms;
         background-color: white;
-        transform : rotate(45deg);
-        /*transition: background-color 400ms;*/
 
         &:hover {
             background: linear-gradient($secondary, $primary);
-
+            transform: rotate(45deg) scale(1.5);
+            
             &::after {
                 background: linear-gradient($secondary, $primary);
+                transform: rotate (90deg);
             }
-
+            
             &::before {
                 background: linear-gradient($secondary, $primary);
             }
+            
         }
-    
-    
-        &::before {
+        
+        &::before{
             content: "";
             position: absolute;
             bottom: 0px;
@@ -286,11 +290,9 @@ p {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: white;
-            z-index: 1;
-            /*transition: background-color 400ms;*/
+            background-color: $white 
         }
-    
+        
         &::after {
             content: "";
             position: absolute;
@@ -298,9 +300,8 @@ p {
             right: 0px;
             width: 10px;
             height: 10px;
-            background-color:white;
+            background-color: white;
             border-radius: 50%;
-            /*transition: background-color 400ms;*/
         }
     }
 }

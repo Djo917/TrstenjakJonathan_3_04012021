@@ -100,8 +100,8 @@ p {
   border: none;
   border-radius: 2em;
   margin-bottom: 1em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   color: #FFFF;
   text-decoration: none;
   font-family: "Roboto";
@@ -169,8 +169,8 @@ p {
   width: 20px;
   line-height: 20px;
   color: #FFFF;
-  background-color: #9356DC;
-  border: solid 1px #9356DC;
+  background-color: #9356dc;
+  border: solid 1px #9356dc;
   border-radius: 50%;
 }
 
@@ -284,25 +284,35 @@ p {
   bottom: 63px;
   width: 10px;
   height: 10px;
+  /*background-color: $white;*/
+  -webkit-transform: rotate(45deg) scale(1);
+          transform: rotate(45deg) scale(1);
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
   background-color: white;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  /*transition: background-color 400ms;*/
 }
 
 .menu__heart--white:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-transform: rotate(45deg) scale(1.5);
+          transform: rotate(45deg) scale(1.5);
 }
 
 .menu__heart--white:hover::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-transform: rotate 90deg;
+          transform: rotate 90deg;
 }
 
 .menu__heart--white:hover::before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .menu__heart--white::before {
@@ -313,9 +323,7 @@ p {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: white;
-  z-index: 1;
-  /*transition: background-color 400ms;*/
+  background-color: #FFFF;
 }
 
 .menu__heart--white::after {
@@ -327,7 +335,6 @@ p {
   height: 10px;
   background-color: white;
   border-radius: 50%;
-  /*transition: background-color 400ms;*/
 }
 
 footer {
@@ -476,8 +483,8 @@ footer .footer--marge {
   margin-bottom: 1em;
   padding-left: 1em;
   opacity: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   color: #FFFF;
   font-size: 1em;
   text-decoration: none;
