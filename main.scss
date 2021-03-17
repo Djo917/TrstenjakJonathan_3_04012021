@@ -88,17 +88,25 @@ p {
     }
 
     &__buton {
+        display: flex;
+        justify-content: center;
         width: 15em;
         height: 3em;
-        border:none;
         border-radius: 2em;
-        margin-bottom: 1em;
+        padding-bottom: 0.3em;
         background: linear-gradient($secondary, $primary);
         color:$white;
         text-decoration: none;
         font-family: "Roboto";
         font-size: 1em;
         font-weight: 400;
+        box-shadow: 2px 4px 5px $footercolor;
+        transition: all 250ms;
+
+        &:hover {
+            opacity: 0.8;
+            box-shadow: 2px 4px 15px black;
+        }
     }
 }
 
@@ -512,6 +520,7 @@ footer {
 }
 
 .order__buton {
+    display: inline-block;
     width: 11.5em;
     height: 3em;
     border: none;
@@ -519,7 +528,7 @@ footer {
     margin-top: 2.5em;
     margin-left: 4em;
     margin-bottom: 1em;
-    padding-left: 1em;
+    padding-left: 0em;
     opacity: 1;
     background: linear-gradient($secondary, $primary);
     
@@ -528,6 +537,7 @@ footer {
     text-decoration: none;
     font-family: "Roboto";
     font-weight: 400;
+    text-align: center;
     box-shadow: 2px 4px 5px $footercolor;
     transition: all 250ms;
 

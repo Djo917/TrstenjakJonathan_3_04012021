@@ -95,11 +95,16 @@ p {
 }
 
 .introduction__buton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 15em;
   height: 3em;
-  border: none;
   border-radius: 2em;
-  margin-bottom: 1em;
+  padding-bottom: 0.3em;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: #FFFF;
@@ -107,6 +112,16 @@ p {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
+  -webkit-box-shadow: 2px 4px 5px #353535;
+          box-shadow: 2px 4px 5px #353535;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.introduction__buton:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 2px 4px 15px black;
+          box-shadow: 2px 4px 15px black;
 }
 
 .step {
@@ -565,6 +580,7 @@ footer .footer--marge {
 }
 
 .order__buton {
+  display: inline-block;
   width: 11.5em;
   height: 3em;
   border: none;
@@ -572,7 +588,7 @@ footer .footer--marge {
   margin-top: 2.5em;
   margin-left: 4em;
   margin-bottom: 1em;
-  padding-left: 1em;
+  padding-left: 0em;
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -581,6 +597,7 @@ footer .footer--marge {
   text-decoration: none;
   font-family: "Roboto";
   font-weight: 400;
+  text-align: center;
   -webkit-box-shadow: 2px 4px 5px #353535;
           box-shadow: 2px 4px 5px #353535;
   -webkit-transition: all 250ms;
