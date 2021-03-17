@@ -563,6 +563,18 @@ footer .footer--marge {
   font-weight: 700;
 }
 
+.delay {
+  visibility: hidden;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  -webkit-transition-property: visibility;
+  transition-property: visibility;
+}
+
+.delay:active {
+  visibility: visible;
+}
+
 /* La note enchantee */
 .bigcards__picture--enchantee {
   height: 15em;
