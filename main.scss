@@ -1,5 +1,5 @@
-$primary: rgba(147, 86, 220, 1);
-$secondary: rgba(255, 121, 218, 1);
+$primary: #9356DC;
+$secondary: #FF79DA;
 $tertiary: #99E2D0;
 $text-tertiary: #008766;
 $white: #FFFF;
@@ -261,11 +261,10 @@ p {
         bottom: 63px;
         width: 10px;
         height: 10px;
-        /*background-color: $white;*/
+        background-color: $white;
         transform : rotate(45deg) scale(1);
         transition: transform;
         transition-duration: 500ms;
-        background-color: white;
 
         &:hover {
             background: linear-gradient($secondary, $primary);
@@ -357,6 +356,90 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    &__heart--black {
+        position: relative;
+        left: 30px;
+        bottom: 0;
+        width: 17px;
+        height: 17px;
+        background-color: black;
+        transform : rotate(45deg);
+    
+    
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: -7px;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background-color:black;
+    
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: -7px;
+            right: 0px;
+            width: 17px;
+            height: 17px;
+            background-color:black;
+            border-radius: 50%;
+        }
+    }
+
+    &__heart--white {
+        position: relative;
+        left: -25px;
+        bottom: 0;
+        width: 14px;
+        height: 14px;
+        /*background-color: $white;*/
+        transform : rotate(45deg) scale(1);
+        transition: transform;
+        transition-duration: 500ms;
+        background-color: white;
+
+        &:hover {
+            background: linear-gradient($secondary, $primary);
+            transform: rotate(45deg) scale(1.5);
+            
+            &::after {
+                background: linear-gradient($secondary, $primary);
+                transform: rotate (90deg);
+            }
+            
+            &::before {
+                background: linear-gradient($secondary, $primary);
+            }
+            
+        }
+        
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: -5.8px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: $white 
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: -5.8px;
+            right: 0px;
+            width: 14px;
+            height: 14px;
+            background-color: white;
+            border-radius: 50%;
+        }
     }
 }
 

@@ -100,8 +100,8 @@ p {
   border: none;
   border-radius: 2em;
   margin-bottom: 1em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   color: #FFFF;
   text-decoration: none;
   font-family: "Roboto";
@@ -169,8 +169,8 @@ p {
   width: 20px;
   line-height: 20px;
   color: #FFFF;
-  background-color: #9356dc;
-  border: solid 1px #9356dc;
+  background-color: #9356DC;
+  border: solid 1px #9356DC;
   border-radius: 50%;
 }
 
@@ -284,7 +284,7 @@ p {
   bottom: 63px;
   width: 10px;
   height: 10px;
-  /*background-color: $white;*/
+  background-color: #FFFF;
   -webkit-transform: rotate(45deg) scale(1);
           transform: rotate(45deg) scale(1);
   -webkit-transition: -webkit-transform;
@@ -293,26 +293,25 @@ p {
   transition: transform, -webkit-transform;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
-  background-color: white;
 }
 
 .menu__heart--white:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-transform: rotate(45deg) scale(1.5);
           transform: rotate(45deg) scale(1.5);
 }
 
 .menu__heart--white:hover::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-transform: rotate 90deg;
           transform: rotate 90deg;
 }
 
 .menu__heart--white:hover::before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .menu__heart--white::before {
@@ -401,6 +400,98 @@ footer .footer--marge {
           align-items: center;
 }
 
+.composition__heart--black {
+  position: relative;
+  left: 30px;
+  bottom: 0;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.composition__heart--black::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: -7px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.composition__heart--black::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 0px;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.composition__heart--white {
+  position: relative;
+  left: -25px;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  /*background-color: $white;*/
+  -webkit-transform: rotate(45deg) scale(1);
+          transform: rotate(45deg) scale(1);
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  background-color: white;
+}
+
+.composition__heart--white:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-transform: rotate(45deg) scale(1.5);
+          transform: rotate(45deg) scale(1.5);
+}
+
+.composition__heart--white:hover::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-transform: rotate 90deg;
+          transform: rotate 90deg;
+}
+
+.composition__heart--white:hover::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.composition__heart--white::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: -5.8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #FFFF;
+}
+
+.composition__heart--white::after {
+  content: "";
+  position: absolute;
+  top: -5.8px;
+  right: 0px;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+}
+
 .palette__entry {
   margin: 0.5em;
 }
@@ -483,8 +574,8 @@ footer .footer--marge {
   margin-bottom: 1em;
   padding-left: 1em;
   opacity: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   color: #FFFF;
   font-size: 1em;
   text-decoration: none;
