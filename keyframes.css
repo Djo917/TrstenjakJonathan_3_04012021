@@ -1,0 +1,25 @@
+@-webkit-keyframes animation-visible {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes animation-visible {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=keyframes.css.map */

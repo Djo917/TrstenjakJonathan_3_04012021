@@ -1,9 +1,12 @@
 @keyframes animation-visible {
-    from {
+    0% {
         visibility: hidden;
     }
-
-    to {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
         visibility: visible;
+        opacity: 1;
     }
 }
