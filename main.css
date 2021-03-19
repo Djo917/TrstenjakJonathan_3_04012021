@@ -643,8 +643,8 @@ footer .footer--marge {
           animation: animation-visible 200ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 350ms;
-          animation-delay: 350ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 .delay--two {
@@ -654,8 +654,8 @@ footer .footer--marge {
           animation: animation-visible 200ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
 }
 
 .delay--three {
@@ -665,7 +665,7 @@ footer .footer--marge {
           animation: animation-visible 200ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 750ms;
-          animation-delay: 750ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 /*# sourceMappingURL=main.css.map */
