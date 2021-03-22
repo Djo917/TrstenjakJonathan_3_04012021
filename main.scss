@@ -575,3 +575,85 @@ footer {
     animation-fill-mode: both;
     animation-delay: 1000ms;
 }
+
+/* Loading spinner */ 
+
+.spinner {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    border: solid 6px white;
+    opacity: 0.8;
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        bottom: -6px;
+        right: -6px;
+        border: solid 6px transparent;
+        border-top-color: $primary;
+        border-bottom-color: $secondary;
+        border-radius: 50%;
+        animation: spin 2000ms ease-in infinite;
+    }
+
+    &--load {
+        position: relative;
+        bottom: 6em;
+        left: 3em;
+        font-family: "Shrikhand";
+    }
+    
+    &--quart {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 9.3em;
+        height: 9.3em;
+        opacity: 0.8;
+        border: solid 6px transparent;
+        border-right-color: $primary;
+        border-left-color: $secondary;
+        opacity: 0.8;
+        border-radius: 50%;
+        animation: spinreverse 2000ms ease-out infinite;
+        transition-timing-function: cubic-bezier(1,0,1,.59);
+    }
+
+    &--dot {
+        position: relative;
+        bottom: 6em;
+        left: 3em;
+        font-family: "Shrikhand";
+        opacity: 0.33;
+        animation: dot 333ms linear infinite forwards;
+        animation-delay: 500ms;
+        visibility: hidden;
+    }
+
+    &--dot2 {
+        position: relative;
+        bottom: 6em;
+        left: 3em;
+        font-family: "Shrikhand";
+        opacity: 0.66;
+        animation: dot 333ms linear infinite forwards;
+        animation-delay: 1000ms;
+        visibility: hidden;
+    }
+
+    &--dot3 {
+        position: relative;
+        bottom: 6em;
+        left: 3em;
+        font-family: "Shrikhand";
+        opacity: 1;
+        animation: dot 333ms linear infinite forwards;
+        animation-delay: 1500ms;
+        visibility: hidden;
+    }
+    
+}

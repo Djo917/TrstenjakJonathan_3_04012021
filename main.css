@@ -24,6 +24,106 @@
   }
 }
 
+@-webkit-keyframes balls {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+}
+
+@keyframes balls {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+  }
+  33% {
+    -webkit-animation-duration: 666ms;
+            animation-duration: 666ms;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    -webkit-animation-duration: 333ms;
+            animation-duration: 333ms;
+  }
+}
+
+@keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+  }
+  33% {
+    -webkit-animation-duration: 666ms;
+            animation-duration: 666ms;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    -webkit-animation-duration: 333ms;
+            animation-duration: 333ms;
+  }
+}
+
+@-webkit-keyframes dot {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes dot {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
 body {
   max-width: 1280px;
   min-width: 375px;
@@ -667,5 +767,94 @@ footer .footer--marge {
           animation-fill-mode: both;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
+}
+
+/* Loading spinner */
+.spinner {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  border: solid 6px white;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+
+.spinner::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border: solid 6px transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  border-radius: 50%;
+  -webkit-animation: spin 2000ms ease-in infinite;
+          animation: spin 2000ms ease-in infinite;
+}
+
+.spinner--load {
+  position: relative;
+  bottom: 6em;
+  left: 3em;
+  font-family: "Shrikhand";
+}
+
+.spinner--quart {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 9.3em;
+  height: 9.3em;
+  opacity: 0.8;
+  border: solid 6px transparent;
+  border-right-color: #9356DC;
+  border-left-color: #FF79DA;
+  opacity: 0.8;
+  border-radius: 50%;
+  -webkit-animation: spinreverse 2000ms ease-out infinite;
+          animation: spinreverse 2000ms ease-out infinite;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 1, 0.59);
+          transition-timing-function: cubic-bezier(1, 0, 1, 0.59);
+}
+
+.spinner--dot {
+  position: relative;
+  bottom: 6em;
+  left: 3em;
+  font-family: "Shrikhand";
+  opacity: 0.33;
+  -webkit-animation: dot 333ms linear infinite forwards;
+          animation: dot 333ms linear infinite forwards;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  visibility: hidden;
+}
+
+.spinner--dot2 {
+  position: relative;
+  bottom: 6em;
+  left: 3em;
+  font-family: "Shrikhand";
+  opacity: 0.66;
+  -webkit-animation: dot 333ms linear infinite forwards;
+          animation: dot 333ms linear infinite forwards;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  visibility: hidden;
+}
+
+.spinner--dot3 {
+  position: relative;
+  bottom: 6em;
+  left: 3em;
+  font-family: "Shrikhand";
+  opacity: 1;
+  -webkit-animation: dot 333ms linear infinite forwards;
+          animation: dot 333ms linear infinite forwards;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+  visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */

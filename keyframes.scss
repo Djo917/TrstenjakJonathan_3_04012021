@@ -10,3 +10,48 @@
         opacity: 1;
     }
 }
+
+@keyframes balls {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(2.0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinreverse {
+    0% {
+        transform: rotate(0deg);
+        animation-duration: 1000ms;
+    }
+
+    33% {
+        animation-duration: 666ms;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        animation-duration: 333ms;
+    }
+}
+
+@keyframes dot {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
