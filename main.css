@@ -108,23 +108,68 @@
 
 @-webkit-keyframes dot {
   from {
-    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
-    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
 @keyframes dot {
   from {
-    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
-    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    -webkit-transform: opacity(1);
+            transform: opacity(1);
+    width: 100%;
+    height: 100%;
+  }
+  90% {
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  100% {
+    top: -100px;
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    -webkit-transform: opacity(1);
+            transform: opacity(1);
+    width: 100%;
+    height: 100%;
+  }
+  90% {
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  100% {
+    top: -100px;
+    width: 0;
+    height: 0;
   }
 }
 
 body {
+  z-index: 0;
   max-width: 1280px;
   min-width: 375px;
   margin: 0;
@@ -678,7 +723,7 @@ footer .footer--marge {
   margin-bottom: -0.5em;
 }
 
-.palette__entry .palette__cards .descriptive--details {
+.palette__entry .palette__cards .descriptive--detailsqs {
   font-weight: 300;
   color: #7E7E7E;
 }
@@ -686,6 +731,30 @@ footer .footer--marge {
 .palette__entry .palette__cards .descriptive--price {
   margin-right: 1.1em;
   font-weight: 700;
+}
+
+.palette__entry .palette__cards .palette--checkicon {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 159.2px;
+  right: 0.5em;
+  height: 64px;
+  width: 60px;
+  border-radius: 0em 0.8em 0.8em 0;
+  background-color: #99e2d0;
+}
+
+.palette__entry .palette__cards .palette--checkicon i {
+  color: white;
 }
 
 /* La note enchantee */
@@ -772,11 +841,16 @@ footer .footer--marge {
 /* Loading spinner */
 .spinner {
   position: relative;
-  width: 10em;
-  height: 10em;
+  z-index: 200;
+  top: 20em;
+  left: 1em;
+  -webkit-animation: hidden;
+          animation: hidden;
+  width: 20em;
+  height: 20em;
   border: solid 6px white;
-  opacity: 0.8;
   border-radius: 50%;
+  background-color: white;
 }
 
 .spinner::after {
@@ -790,14 +864,13 @@ footer .footer--marge {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: spin 2000ms ease-in infinite;
-          animation: spin 2000ms ease-in infinite;
+  /*animation: spin 2000ms ease-in infinite;*/
 }
 
 .spinner--load {
   position: relative;
-  bottom: 6em;
-  left: 3em;
+  bottom: 10em;
+  left: 7em;
   font-family: "Shrikhand";
 }
 
@@ -805,56 +878,47 @@ footer .footer--marge {
   position: relative;
   top: 0px;
   left: 0px;
-  width: 9.3em;
-  height: 9.3em;
+  width: 18.6em;
+  height: 18.6em;
   opacity: 0.8;
   border: solid 6px transparent;
   border-right-color: #9356DC;
   border-left-color: #FF79DA;
   opacity: 0.8;
   border-radius: 50%;
-  -webkit-animation: spinreverse 2000ms ease-out infinite;
-          animation: spinreverse 2000ms ease-out infinite;
+  /*animation: spinreverse 2000ms ease-out infinite;*/
   -webkit-transition-timing-function: cubic-bezier(1, 0, 1, 0.59);
           transition-timing-function: cubic-bezier(1, 0, 1, 0.59);
 }
 
 .spinner--dot {
+  content: "";
   position: relative;
-  bottom: 6em;
-  left: 3em;
+  bottom: 10em;
+  left: 7em;
   font-family: "Shrikhand";
-  opacity: 0.33;
-  -webkit-animation: dot 333ms linear infinite forwards;
-          animation: dot 333ms linear infinite forwards;
+  border-radius: 50%;
+  opacity: 1;
+  animation: dot 333ms linear infinite alternate-reverse both;
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
-  visibility: hidden;
+}
+
+.spinner--dot1 {
+  animation: dot 1s linear infinite alternate-reverse both;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .spinner--dot2 {
-  position: relative;
-  bottom: 6em;
-  left: 3em;
-  font-family: "Shrikhand";
-  opacity: 0.66;
-  -webkit-animation: dot 333ms linear infinite forwards;
-          animation: dot 333ms linear infinite forwards;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-  visibility: hidden;
+  animation: dot 1s linear infinite alternate-reverse both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .spinner--dot3 {
-  position: relative;
-  bottom: 6em;
-  left: 3em;
-  font-family: "Shrikhand";
-  opacity: 1;
-  -webkit-animation: dot 333ms linear infinite forwards;
-          animation: dot 333ms linear infinite forwards;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-  visibility: hidden;
+  animation: dot 1s linear infinite alternate-reverse both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 /*# sourceMappingURL=main.css.map */

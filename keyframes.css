@@ -108,19 +108,63 @@
 
 @-webkit-keyframes dot {
   from {
-    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
-    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
 @keyframes dot {
   from {
-    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
-    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    -webkit-transform: opacity(1);
+            transform: opacity(1);
+    width: 100%;
+    height: 100%;
+  }
+  90% {
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  100% {
+    top: -100px;
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    -webkit-transform: opacity(1);
+            transform: opacity(1);
+    width: 100%;
+    height: 100%;
+  }
+  90% {
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  100% {
+    top: -100px;
+    width: 0;
+    height: 0;
   }
 }
 /*# sourceMappingURL=keyframes.css.map */
