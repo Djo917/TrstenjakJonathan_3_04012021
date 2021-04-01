@@ -470,6 +470,7 @@ footer {
     }
 
     .palette__cards {
+        position: relative;
         background-color: $white;
         border-radius: 0.8em;
         margin-bottom: 1.8em;
@@ -506,22 +507,34 @@ footer {
         }
 
         .palette--checkicon {
-            content: "";
+            position: absolute;
+            right: -3.5em;
+            top: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            top: 159.2px;
-            right: 0.5em;
-            height: 64px;
-            width: 60px;
+            height: 100%;
+            width: 5%;
             border-radius: 0em 0.8em 0.8em 0;
             background-color: #99e2d0;
+            transition: 1s;
 
             & i {
                 color: white;
             }
+
+            &:hover {
+                right: 0px;
+
+                i{
+                    animation: rotate__icon;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    transition: transform 500ms ease-in-out;
+                }
+            }
         }
+        
     }
 }
 
@@ -597,14 +610,30 @@ footer {
 
 /* Loading spinner */ 
 
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    animation: hidespinner 3000ms linear forwards;
+
+}
+
 .spinner {
     position: relative;
     z-index: 200;
     top: 20em;
     left: 1em;
     animation: hidden;
-    width: 20em;
-    height: 20em;
+    width: 10em;
+    height: 10em;
     border: solid 6px white;
     border-radius: 50%; 
     background-color: white;
@@ -620,37 +649,37 @@ footer {
         border-top-color: $primary;
         border-bottom-color: $secondary;
         border-radius: 50%;
-        /*animation: spin 2000ms ease-in infinite;*/
+        animation: spin 2000ms ease-in infinite;
     }
 
     &--load {
         position: relative;
-        bottom: 10em;
-        left: 7em;
+        bottom: 6.5em;
+        left: 2em;
         font-family: "Shrikhand";
     }
     
     &--quart {
         position: relative;
         top: 0px;
-        left: 0px;
-        width: 18.6em;
-        height: 18.6em;
+        left: 1.5px;
+        width: 9.1em;
+        height: 9.1em;
         opacity: 0.8;
         border: solid 6px transparent;
         border-right-color: $primary;
         border-left-color: $secondary;
         opacity: 0.8;
         border-radius: 50%;
-        /*animation: spinreverse 2000ms ease-out infinite;*/
+        animation: spinreverse 2000ms ease-out infinite;
         transition-timing-function: cubic-bezier(1,0,1,.59);
     }
 
     &--dot {
         content: "";
         position: relative;
-        bottom: 10em;
-        left: 7em;
+        bottom: 6.5em;
+        left: 2em;
         font-family: "Shrikhand";
         border-radius: 50%;
         opacity: 1;
@@ -674,3 +703,8 @@ footer {
     }
     
 }
+
+/* Fin du loading spinner */ 
+
+/* Animation check des plats */
+
