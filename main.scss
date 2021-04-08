@@ -171,6 +171,12 @@ p {
     }
 }
 
+.container--menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .menu {
     background-color: $background;
     display: flex;
@@ -194,6 +200,7 @@ p {
         box-shadow: 2px 7px 7px $headcolor;
 
         &--link {
+            position: relative;
             text-decoration: none;
             color: $textcolor;
         }
@@ -220,9 +227,9 @@ p {
     }
 
     &--new {
-        position: relative;
-        left: 14.5em;
-        bottom: 13em;
+        position: absolute;
+        left: 16em;
+        bottom: 7em;
         border: solid 1px $tertiary;
         border-radius: 2px;
         color:$text-tertiary;
@@ -233,7 +240,7 @@ p {
 
     &__heart--black {
         position: relative;
-        left: 15em;
+        left: 19em;
         bottom: 3.3em;
         width: 12px;
         height: 12px;
@@ -267,8 +274,8 @@ p {
     
     &__heart--white {
         position: relative;
-        left: 241px;
-        bottom: 63px;
+        left: 19.05em;
+        bottom: 64px;
         width: 10px;
         height: 10px;
         background-color: $white;
@@ -277,16 +284,16 @@ p {
         transition-duration: 500ms;
 
         &:hover {
-            background: linear-gradient($secondary, $primary);
+            background-color: $primary;
             transform: rotate(45deg) scale(1.5);
             
             &::after {
-                background: linear-gradient($secondary, $primary);
+                background-color: $primary;
                 transform: rotate (90deg);
             }
             
             &::before {
-                background: linear-gradient($secondary, $primary);
+                background-color: $primary;
             }
             
         }
@@ -361,6 +368,7 @@ footer {
     padding-bottom: 3em;
 
     &--title {
+        width: 23em;
         font-family: "Shrikhand";
         text-align: center;
         display: flex;
@@ -370,7 +378,7 @@ footer {
 
     &__heart--black {
         position: relative;
-        left: 30px;
+        left: 30.5px;
         bottom: 0;
         width: 17px;
         height: 17px;
@@ -404,27 +412,26 @@ footer {
 
     &__heart--white {
         position: relative;
-        left: -25px;
+        left: -22px;
         bottom: 0;
         width: 14px;
         height: 14px;
-        /*background-color: $white;*/
         transform : rotate(45deg) scale(1);
         transition: transform;
         transition-duration: 500ms;
         background-color: white;
 
         &:hover {
-            background: linear-gradient($secondary, $primary);
+            background-color: $primary;
             transform: rotate(45deg) scale(1.5);
             
             &::after {
-                background: linear-gradient($secondary, $primary);
+                background-color: $primary;
                 transform: rotate (90deg);
             }
             
             &::before {
-                background: linear-gradient($secondary, $primary);
+                background-color: $primary;
             }
             
         }
@@ -474,6 +481,7 @@ footer {
         background-color: $white;
         border-radius: 0.8em;
         margin-bottom: 1.8em;
+        overflow: hidden;
     
         .palette--link {
             text-decoration: none;
@@ -487,6 +495,9 @@ footer {
             margin-top: 1em;
             margin-bottom: -0.5em;
             margin-left: 0.5em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     
         .descriptive {
@@ -495,9 +506,12 @@ footer {
             margin-left: 0.5em;
             margin-bottom: -0.5em;
 
-            &--detailsqs {
+            &--details {
                 font-weight: 300;
                 color: $fontawesomecolor;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
 
             &--price {
@@ -508,13 +522,13 @@ footer {
 
         .palette--checkicon {
             position: absolute;
-            right: -3.5em;
+            right: -3.8em;
             top: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
-            width: 5%;
+            width: 12%;
             border-radius: 0em 0.8em 0.8em 0;
             background-color: #99e2d0;
             transition: 1s;
@@ -522,20 +536,30 @@ footer {
             & i {
                 color: white;
             }
-
-            &:hover {
-                right: 0px;
-
-                i{
-                    animation: rotate__icon;
-                    animation-duration: 1s;
-                    animation-fill-mode: forwards;
-                    transition: transform 500ms ease-in-out;
-                }
-            }
         }
         
     }
+}
+
+
+.palette__cards:hover .palette--checkicon {
+    right: 0px;
+
+    i{
+        animation: rotate__icon;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        transition: transform 500ms ease-in-out;
+    }
+}
+
+.palette__cards:hover .palette--link {
+    width: 88%;
+}
+
+.palette--link {
+    width: 100%;
+    transition: width 1s;
 }
 
 
@@ -561,7 +585,7 @@ footer {
     border: none;
     border-radius: 2em;
     margin-top: 2.5em;
-    margin-left: 4em;
+    margin-left: 5em;
     margin-bottom: 1em;
     padding-left: 0em;
     opacity: 1;
@@ -706,5 +730,158 @@ footer {
 
 /* Fin du loading spinner */ 
 
-/* Animation check des plats */
 
+@media screen and (min-width: 430px)
+{
+    .menu--new {
+        left: 19em;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .menu--new {
+        left: 22em;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .menu {
+        width: 100%;
+
+        &__cards {
+            width: 30em;
+        }
+    }
+    .menu--new {
+        position: absolute;
+        left: 25em;
+        bottom: 7em;
+    }
+
+    .menu__heart--black {
+        left: 27em;
+    }
+
+    .menu__heart--white {
+        left: 27.07em;
+    }
+
+    .composition {
+        width: 100%;
+    }
+
+    .palette__cards {
+        width: 30em;
+    }   
+
+    .palette--checkicon {
+        right: -3.5em;
+    }
+}
+
+@media screen and (min-width: 700px)
+{
+    .composition--title {
+        margin-left: 4.5em;
+    }
+    .palette__entry {
+        margin-left: 5em;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__number {
+            width: 100%;
+        }
+    }
+
+    .container--menu {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 100%;
+
+        &__cards {
+            width: 45em;
+        }
+    }
+    .menu--new {
+        position: absolute;
+        left: 38em;
+        bottom: 7em;
+    }
+
+    .menu__heart--black {
+        left: 40em;
+    }
+
+    .menu__heart--white {
+        left: 40.05em;
+    }
+}
+
+@media screen and (min-width: 801px)
+{
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__number {
+            width: 100%;
+        }
+    }
+
+    .container--menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 100%;
+
+        &__cards {
+            width: 45em;
+        }
+    }
+    .menu--new {
+        position: absolute;
+        left: 40em;
+        bottom: 7em;
+    }
+
+    .menu__heart--black {
+        left: 40em;
+    }
+
+    .menu__heart--white {
+        left: 40.07em;
+    }
+
+    .composition--title {
+        margin-left: 6.5em;
+    }
+    .palette__entry {
+        margin-left: 1em;
+    }
+
+    .palette__cards {
+        width: 47em;
+    }
+
+    .palette--checkicon .palette__cards .palette__entry {
+        right: -5.8em;
+    }
+}
