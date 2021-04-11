@@ -774,7 +774,7 @@ footer {
     }   
 
     .palette--checkicon {
-        right: -3.5em;
+        right: -3.8em;
     }
 }
 
@@ -788,6 +788,47 @@ footer {
     }
 }
 
+@media screen and (min-width: 768px)
+{
+
+    body{
+        margin: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .start {
+        margin-left: 12em;
+    }
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__number {
+            width: 100%;
+        }
+    }
+
+    .composition--title {
+        margin-left: 12em;
+    }
+
+    .palette__entry {
+        margin-left: 10em
+    }
+
+    .order__buton {
+        width: 25em;
+        margin-left: 2em;
+    }
+
+    .palette--checkicon {
+        right: -4.5em;
+    }
+}
 @media screen and (min-width: 800px)
 {
     .step {
@@ -831,6 +872,15 @@ footer {
 
 @media screen and (min-width: 801px)
 {
+
+    body{
+        margin: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
     .step {
         display: flex;
         flex-direction: column;
@@ -870,10 +920,10 @@ footer {
     }
 
     .composition--title {
-        margin-left: 6.5em;
+        margin-left: 12.5em;
     }
     .palette__entry {
-        margin-left: 1em;
+        margin-left: 2em;
     }
 
     .palette__cards {
@@ -885,10 +935,41 @@ footer {
     }
 
     .order__buton {
-        margin-left: 15em;
+        margin-left: 12.5em;
     }
 
-    .start .logo {
-        left: 8em;
+    .start {
+        left: 2em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .palette__entry {
+        margin-left: 0em;
+    }
+    
+    .palette__cards {
+        width: 100%;
+        margin: 0.5em;
+    }
+
+    .palette--checkicon {
+        right: -8.8em;
+        width: 8%;
+    }
+
+    .order__buton {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .composition--title {
+        margin-left: 25em;
+    }
+
+    .start {
+        margin-left: 32em;
     }
 }
