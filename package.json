@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch /mnt/d/Formation_développeur_web/P3_TRSTENJAKJonathan/css/main.scss:css/main.css" 
-  },
-  "scripts": {
-    "sass": "sass --watch /mnt/d/Formation_développeur_web/P3_TRSTENJAKJonathan/css/keyframes.scss:css/keyframes.css" 
-  },
-  
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Djo917/TrstenjakJonathan_3_04012021.git"
